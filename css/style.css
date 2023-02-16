@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background-image: url('../assets/home.jpg');
+	background-size: cover;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px;
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+li {
+	margin: 0 25px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.card {
+	background-color: rgba(0,0,0,0.2);
+	padding: 20px;
+	margin: auto;
+	max-width: 600px;
+	color: white;
+	text-align: center;
+	margin-top: 80px;
+	margin-right: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		background-position: center;
+	}
+}
