@@ -48,9 +48,73 @@ a {
 	margin-top: 80px;
 	margin-right: 90px;
 }
-
+.containerone {
+	display: flex;
+	overflow-x: auto;
+	height: 100%;
+	
+  }
+  .services{
+	padding: 20px;
+	margin: auto;
+	max-width: 600px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+  }
+  .scrollable {
+	width: 33.33%;
+	/* height: 10%; */
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 20px;
+	margin-top: 20px;
+	background-color: rgba(0,0,0,0.1);
+  }
+  
+  .icon {
+	font-size: 40px;
+	color: #333;
+	margin-bottom: 15px;
+  }
+  
+  .text {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .description {
+	font-size: 16px;
+	line-height: 1.5;
+  }
+    
+  
 @media only screen and (max-width: 768px) {
 	.container {
 		background-position: center;
 	}
+	.containerone {
+		flex-wrap: wrap;
+		height: auto;
+	  }
+	  .scrollable {
+		width: 40%;
+		height: auto;
+		padding: 20px 20px;
+	  }
+	  .icon {
+		font-size: 25px;
+		margin-bottom: 10px;
+	  }
+	  
+	  .text {
+		font-size: 18px;
+		margin-bottom: 5px;
+	  }
+	  
+	  .description {
+		font-size: 15px;
+		line-height: 0.9;
+	  }
 }
