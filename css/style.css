@@ -1,12 +1,12 @@
 * {
 	box-sizing: border-box;
 }
-
 body {
 	margin: 0;
 	padding: 0;
 }
 
+/* home page image setup */
 .container {
 	background-image: url('../assets/home.jpg');
 	background-size: cover;
@@ -15,29 +15,42 @@ body {
 	flex-direction: column;
 }
 
+/* menu/navigation bar items styling */
 .navbar {
 	display: flex;
 	justify-content: flex-end;
 	padding: 15px;
 	font-size: 20px;
 }
-
 ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
 }
-
 li {
 	margin: 0 25px;
 }
-
 a {
 	color: white;
 	text-decoration: none;
 }
+.menu-icon {
+	display: none;
+}
+.menu a:hover {
+	display: block;
+	padding: 9px;
+	text-decoration: none;
+	color: #333;
+	background-color: #fff8e284;
+	border-radius: 18px;
+	font-size: 1.0em;
+	transition: all 0.2s ease-in-out;
+}
+/* nav bar styling */
 
+/* home page text styling */
 .card {
 	background-color: rgba(0,0,0,0.2);
 	padding: 20px;
@@ -48,6 +61,8 @@ a {
 	margin-top: 80px;
 	margin-right: 90px;
 }
+
+/* services page styling */
 .containerone {
 	display: flex;
 	overflow-x: auto;
@@ -88,26 +103,79 @@ a {
 	font-size: 16px;
 	line-height: 1.5;
   }
-    
-  
+  /* services page styling */
+
+	  
 @media only screen and (max-width: 768px) {
+	/* the drop down menu with css */
+	header {
+		background-color: #333;
+		color: #fff;
+		padding: 10px;
+	  }
+	  nav {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	  }
+	  .menu-icon {
+		display: block;
+		cursor: pointer;
+		color: #fff;
+	  }
+	  .menu-icon i {
+		margin-right: 5px;
+		font-size: 25px;
+	  }
+	  
+	  .menu {
+		display: none;
+		position:absolute ;
+		top: 20px;
+		left: 90;
+		background-color: #f9f9f9;
+		padding: 10px;
+	  }
+	  .menu li {
+		margin: 5px 0;
+	  }
+	  .menu a {
+		color: #333;
+		text-decoration: none;
+	  }
+	  .menu a :hover{
+		font-size: 1000;
+	  }
+	  .show-menu {
+		display: block;
+	  }
+	 /*    ###################################################  */
 	.container {
 		background-position: center;
 	}
 	.containerone {
 		flex-wrap: wrap;
 		height: auto;
+		margin-left: 20px;
 	  }
 	  .scrollable {
 		width: 40%;
 		height: auto;
 		padding: 20px 20px;
 	  }
+	  .navbar {
+		font-size: 12px;
+	}
+	.services{
+		font-size: 13px;
+	  }
 	  .icon {
 		font-size: 25px;
 		margin-bottom: 10px;
 	  }
-	  
+	  .card {
+		font-size: 10px;
+	}
 	  .text {
 		font-size: 18px;
 		margin-bottom: 5px;
