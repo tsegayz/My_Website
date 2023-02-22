@@ -60,6 +60,7 @@ a {
 	text-align: center;
 	margin-top: 80px;
 	margin-right: 90px;
+	margin-bottom: 10px;
 }
 
 /* services page styling */
@@ -111,6 +112,7 @@ a {
   .container-skill{
 	display: flex;
 	flex-wrap: wrap;
+	/* margin-top: 20px; */
 	}
 
 	.left-column {
@@ -123,7 +125,7 @@ a {
 	.right-column {
 		flex: 1;
 		padding: 20px;
-		background-color: #e6e6e6;
+		background-color: #faf6f6;
 	}
 
 	.skill-ul {
