@@ -1,17 +1,192 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hover Menu Example</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<title>Two-Column Layout</title>
+	<style>
+		.column {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
 
+		.column div {
+			flex-basis: 50%;
+		}
+
+		.list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.list li {
+			margin-bottom: 50px;
+		}
+
+		.progress-bar {
+			background-color: #ddd;
+			height: 5px;
+			border-radius: 25px;
+			position: relative;
+		}
+
+		.progress {
+			background-color: #00bcd4;
+			height: 100%;
+			border-radius: 10px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: width 0.3s ease;
+		}
+    /* @media screen and (min-width: 768px) {
+        .column {
+          width: 60%;
+        }
+      } */
+	</style>
+</head>
+<body>
+	<div class="column">
+		<div>
+			<h2>My Education</h2>
+			<ul class="list">
+				<li><strong>Point 1:</strong> Description of point 1.</li>
+				<li><strong>Point 2:</strong> Description of point 2.</li>
+				<li><strong>Point 3:</strong> Description of point 3.</li>
+			</ul>
+		</div>
+		<div>
+			<h2>My Skills</h2>
+			<ul class="list">
+				<li><strong>HTML</strong>
+					<div class="progress-bar">
+						<div class="progress" style="width: 80%;"></div>
+					</div>
+				</li>
+				<li><strong>CSS</strong>
+					<div class="progress-bar">
+						<div class="progress" style="width: 80%;"></div>
+					</div>
+				</li>
+				<li><strong>JavaScript</strong>
+					<div class="progress-bar">
+						<div class="progress" style="width: 75%;"></div>
+					</div>
+				</li>
+        <li><strong>Flutter</strong>
+					<div class="progress-bar">
+						<div class="progress" style="width: 50%;"></div>
+					</div>
+				</li>
+        <li><strong>Python</strong>
+					<div class="progress-bar">
+						<div class="progress" style="width: 40%;"></div>
+					</div>
+				</li>
+        <li><strong>React</strong>
+					<div class="progress-bar">
+						<div class="progress" style="width: 2%;"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Two-Column Responsive HTML Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .column {
+        width: 100%;
+        max-width: 500px;
+        margin-bottom: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        .column {
+          width: 45%;
+        }
+      }
+      .point {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .point .pin {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        margin-right: 10px;
+      }
+      .progress-bar {
+        height: 20px;
+        background-color: #ddd;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .progress-bar .progress {
+        height: 100%;
+        border-radius: 10px;
+        background-color: green;
+      }
+    </style>
   </head>
   <body>
-    <div class="menu-icon"></div>
-    <ul class="menu hidden">
-      <li><a href="#">Menu Item 1</a></li>
-      <li><a href="#">Menu Item 2</a></li>
-      <li><a href="#">Menu Item 3</a></li>
-    </ul>
+    <div class="container">
+      <div class="column">
+        <div class="point">
+          <div class="pin"></div>
+          <div class="description">Point 1 description</div>
+        </div>
+        <div class="point">
+          <div class="pin"></div>
+          <div class="description">Point 2 description</div>
+        </div>
+        <div class="point">
+          <div class="pin"></div>
+          <div class="description">Point 3 description</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="item">
+          Item 1
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+        </div>
+        <div class="item">
+          Item 2
+          <div class="progress-bar">
+            <div class="progress" style="width: 30%;"></div>
+          </div>
+        </div>
+        <div class="item">
+          Item 3
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+</html> -->
